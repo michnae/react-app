@@ -9,8 +9,8 @@ module.exports = {
     [
       "@semantic-release/github", {
         assets: [
-            { path: "build.zip", label: "Build" },
-            { path: "coverage.zip", label: "Coverage" }
+            { path: "react-app/build.zip", label: "Build" },
+            { path: "react-app/coverage.zip", label: "Coverage" }
         ]
       }
     ]
