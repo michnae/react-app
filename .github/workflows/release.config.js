@@ -1,4 +1,4 @@
-const { buildQueries } = require("@testing-library/react");
+//const { buildQueries } = require("@testing-library/react");
 
 module.exports = {
   branches: "master",
