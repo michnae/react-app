@@ -49,11 +49,6 @@ jobs:
           zip -r coverage.zip ./coverage
           pwd
           ls -la
-      - name: Upload ZIP-File coveraged-compressed
-        uses: actions/upload-artifact@v1
-        with:
-          name: coverage-compressed
-          path: coverage.zip
       - name: Create a Release
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx semantic-release
@@ -70,5 +65,3 @@ jobs:
         run: npx codecov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-
