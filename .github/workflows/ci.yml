@@ -47,7 +47,8 @@ jobs:
         run: |
           zip -r build.zip ./build
           zip -r coverage.zip ./coverage
-          ls -la "/home/runner/work/react-app/react-app/"
+          pwd
+          ls -la
       - name: Create a Release
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx semantic-release
