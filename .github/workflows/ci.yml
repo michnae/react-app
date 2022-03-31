@@ -3,7 +3,8 @@ on:
   pull_request:
     branches: [develop, master]
   push:
-    branches: [develop, master]    
+    branches: [develop, master]  
+      
 jobs:
   build:
     runs-on: ubuntu-latest
