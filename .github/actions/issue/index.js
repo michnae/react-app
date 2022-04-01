@@ -10,8 +10,8 @@ try {
     const octokit = new github.GitHub(token);
 
     const response = octokit.issues.create({
-        owner: github.context.repo.owner,
-        repo: github.context.repo.repo,
+        //owner: github.context.repo.owner,
+        //repo: github.context.repo.repo,
         ...github.context.repo,
         title,
         body,
